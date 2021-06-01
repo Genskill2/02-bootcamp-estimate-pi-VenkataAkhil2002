@@ -7,7 +7,7 @@ def monte_carlo(n):
         for i in range(n):
             rand_x= random.uniform(-1, 1)
             rand_y= random.uniform(-1, 1)
-            origin_dist= rand_x*2 + rand_y*2
+            origin_dist= rand_x**2 + rand_y**2
             if origin_dist<= 1:
                 circle_points+= 1
             square_points+= 1
